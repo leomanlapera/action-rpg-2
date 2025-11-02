@@ -2,7 +2,21 @@ extends CharacterBody2D
 
 const SPEED = 100.0
 
+var input_vector: = Vector2.ZERO
+
+@onready var animation_tree: AnimationTree = $AnimationTree
+@onready var sprite_2d: Sprite2D = $Sprite2D
+
 func _physics_process(delta: float) -> void:
-	var vector_input = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	velocity = vector_input * SPEED
+	input_vector = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	
+	if input_vector != Vector2.ZERO:
+		var direction_vector: = Vector2(input_vector.x, -input_vector.y)
+		animation_tree.set("parameters/StateMachine/MoveState/RunState/blend_position", direction_vector)
+		animation_tree.set("parameters/StateMachine/MoveState/StandState/blend_position", direction_vector)
+	
+	if input_vector.x != 0:
+		sprite_2d.flip_h = input_vector.x < 0
+	
+	velocity = input_vector * SPEED
 	move_and_slide()

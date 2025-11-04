@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://847appavew00"]
+[gd_scene load_steps=3 format=3 uid="uid://847appavew00"]
 
 [ext_resource type="PackedScene" uid="uid://d2tjhcb6gawb1" path="res://player/player.tscn" id="1_f3sb7"]
+[ext_resource type="Texture2D" uid="uid://bhr211q3swpw0" path="res://decorations/Oak_Tree.png" id="2_fj7yv"]
 
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_f3sb7")]
 position = Vector2(149, 82)
+
+[node name="OakTree" type="Sprite2D" parent="."]
+position = Vector2(68, 102)
+texture = ExtResource("2_fj7yv")

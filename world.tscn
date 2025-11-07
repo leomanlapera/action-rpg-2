@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://847appavew00"]
+[gd_scene load_steps=4 format=3 uid="uid://847appavew00"]
 
 [ext_resource type="PackedScene" uid="uid://d2tjhcb6gawb1" path="res://player/player.tscn" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://bxbi556jskogd" path="res://decorations/oak_tree.tscn" id="2_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://b5c6w1lsh7tw5" path="res://decorations/oak_tree_small.tscn" id="3_tlwt5"]
 
 [node name="World" type="Node2D"]
 y_sort_enabled = true
@@ -12,8 +13,17 @@ position = Vector2(149, 82)
 [node name="OakTree" parent="." instance=ExtResource("2_fj7yv")]
 position = Vector2(119, 49)
 
+[node name="OakTree7" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(171, 81)
+
 [node name="OakTree5" parent="." instance=ExtResource("2_fj7yv")]
 position = Vector2(37, 49)
+
+[node name="OakTree12" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(-40, 147)
+
+[node name="OakTree8" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(264, 76)
 
 [node name="OakTree2" parent="." instance=ExtResource("2_fj7yv")]
 position = Vector2(203, 49)
@@ -21,8 +31,62 @@ position = Vector2(203, 49)
 [node name="OakTree3" parent="." instance=ExtResource("2_fj7yv")]
 position = Vector2(164, 138)
 
+[node name="OakTree9" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(203, 180)
+
+[node name="OakTree10" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(115, 198)
+
+[node name="OakTree11" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(35, 172)
+
 [node name="OakTree6" parent="." instance=ExtResource("2_fj7yv")]
 position = Vector2(243, 138)
 
 [node name="OakTree4" parent="." instance=ExtResource("2_fj7yv")]
 position = Vector2(81, 138)
+
+[node name="OakTreeSmall" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(108, 67)
+
+[node name="OakTreeSmall2" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(84, 79)
+
+[node name="OakTreeSmall8" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(68, 48)
+
+[node name="OakTreeSmall9" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(52, 75)
+
+[node name="OakTreeSmall10" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(-2, 106)
+
+[node name="OakTreeSmall11" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(3, 60)
+
+[node name="OakTreeSmall5" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(30, 103)
+
+[node name="OakTreeSmall6" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(-31, 75)
+
+[node name="OakTreeSmall7" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(-38, 46)
+
+[node name="OakTreeSmall3" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(118, 130)
+
+[node name="OakTreeSmall4" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(133, 84)
+
+[node name="OakTreeSmall12" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(253, 16)
+
+[node name="OakTreeSmall15" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(271, 17)
+
+[node name="OakTreeSmall13" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(284, 113)
+
+[node name="OakTreeSmall14" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(284, 113)
